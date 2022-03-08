@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    min-height: 100vh;
+    background-image: url('images/backgrounds/cloudy.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.search-div {
+    width: 30%;
+    height: 7rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    display: grid;
+}
+.search-div label {
+    display: none;
+}
+.search-div input {
+    display: block;
+    margin: auto;
+    padding: 7px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    caret-color: whitesmoke;
+    color: whitesmoke;
+}
+.search-div input::placeholder {
+    color: whitesmoke;
+}
+.content-div {
+    width: auto;
+    height: 26rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    transition: all 1.5s ease-in-out;
+    padding: 0rem 5rem;
+}
+.content {
+    display: inline;
+    color: white;
+    line-height: 26rem;
+    margin: 0 1rem;
+}
+.temp {
+    font-size: 10rem;
+}
+.location {
+    font-size: 4rem;
+}
+.content-div img {
+    height: 4rem;
+    display: none;
+}
